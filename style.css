@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
+
+* { /* Seleciona todos os elementos */
+    margin: 0; /* remove o margin padrão */
+    padding: 0; /* remove o padding e margin padrão */
 }
 
 h1 {
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: "Krona One", sans-serif; /* o nome pode ser encontrado junto com o @import */
 }
 
 p   {
@@ -16,22 +18,41 @@ p   {
 }
 
 body{
-    height: 100vh;
+    height: 100vh; /* totalidade da altura da tela */
     background: #000;
     color: #f6f6f6;
 }
- 
+
 #titulo-em-destaque  {
     color: #22D4FD;
 }
 
 #flex-box {
     margin: 10%;
-    display: flex;
+    display: flex; /* ativa flexbox */
     align-items: center;
     justify-content: space-between;
 }
 
 #flex-box #texto {
     width: 615px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-between; /* espaço entre os botões */
+}
+
+.redes-sociais a {
+    background-color: #22D4FD; /* cor de fundo do botão */
+    width: 280px; /* largura do botão */
+    text-align: center;
+    border-radius: 16px; /* borda arredondada */
+    font-size: 24px;
+    padding: 21.5px 0;  /*linha vertical e depois a horizontal, tbm poderia ser (21.5px 0 21.5px 0)*/
+    text-decoration: none; /* tira o sublinhado */
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600; /* itálico e negrito */
+
 }
