@@ -28,14 +28,17 @@ body{
 }
 
 #flex-box {
-    margin: 10%;
+    margin: 10% 15%; /* margem superior e inferior de 10% e lateral de 15% */
     display: flex; /* ativa flexbox */
     align-items: center;
     justify-content: space-between;
 }
 
-#flex-box #texto {
+#texto {
     width: 615px;
+    display: flex;
+    flex-direction: column; /* muda a direção do flexbox para coluna, pois o padrao do flexbox é em linha*/
+    gap: 40px; /* espaço entre os elementos filhos */
 }
 
 .redes-sociais {
