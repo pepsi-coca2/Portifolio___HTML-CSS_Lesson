@@ -41,21 +41,30 @@ body{
     gap: 40px; /* espaço entre os elementos filhos */
 }
 
+h2 {
+    font-size: 24px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400; /* peso da fonte */
+}
+
 .redes-sociais {
     display: flex;
     justify-content: space-between; /* espaço entre os botões */
+    flex-direction: column;
+    align-items: center;
+    gap: 32px; /* espaço entre os botões */
 }
 
-.redes-sociais a {
-    background-color: #22D4FD; /* cor de fundo do botão */
-    width: 280px; /* largura do botão */
+.redes-sociais .buttom {
+    /* background-color: #22D4FD; /* cor de fundo do botão */
+    width: 278px; /* largura do botão */
     text-align: center;
-    border-radius: 16px; /* borda arredondada */
+    border-radius: 8px; /*borda arredondada*/
     font-size: 24px;
     padding: 21.5px 0;  /*linha vertical e depois a horizontal, tbm poderia ser (21.5px 0 21.5px 0)*/
-    text-decoration: none; /* tira o sublinhado */
-    color: #000;
+    text-decoration: none; /*remove o sublinhado*/
+    color: #F6F6F6;
     font-family: "Montserrat", sans-serif;
-    font-weight: 600; /* itálico e negrito */
-
+    font-weight: 600; /*especificacao peso da fonte*/
+    border: #22D4FD solid 2px; /*borda do botão*/
 }
