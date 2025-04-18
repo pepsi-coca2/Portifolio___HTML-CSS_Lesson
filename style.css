@@ -3,7 +3,7 @@
 
 
 * { /* Seleciona todos os elementos */
-    margin: 0; /* remove o margin padrão */
+    margin: 0;
     padding: 0; /* remove o padding e margin padrão */
 }
 
@@ -20,7 +20,7 @@ p   {
 body{
     height: 100vh; /* totalidade da altura da tela */
     background: #000;
-    color: #f6f6f6;
+    color: #f6f6f6; /* cor do texto */
 }
 
 #titulo-em-destaque  {
@@ -49,22 +49,22 @@ h2 {
 
 .redes-sociais {
     display: flex;
-    justify-content: space-between; /* espaço entre os botões */
+    justify-content: space-between; /* espaço entre blocos */
     flex-direction: column;
     align-items: center;
-    gap: 32px; /* espaço entre os botões */
+    gap: 32px; /* tamanho do espaço entre blocos */
 }
 
 .redes-sociais .buttom {
-    /* background-color: #22D4FD; /* cor de fundo do botão */
-    width: 278px; /* largura do botão */
+    /* background-color: #22D4FD; /* cor de fundo do botao */
+    width: 278px; /* largura do botao */
     text-align: center;
-    border-radius: 8px; /*borda arredondada*/
+    border-radius: 8px; /* borda arredondada */
     font-size: 24px;
-    padding: 21.5px 0;  /*linha vertical e depois a horizontal, tbm poderia ser (21.5px 0 21.5px 0)*/
-    text-decoration: none; /*remove o sublinhado*/
+    padding: 21.5px 0;  /* msm que: 21.5px 0 21.5px 0 */
+    text-decoration: none; /* remove sublinhado padrao*/
     color: #F6F6F6;
     font-family: "Montserrat", sans-serif;
-    font-weight: 600; /*especificacao peso da fonte*/
-    border: #22D4FD solid 2px; /*borda do botão*/
+    font-weight: 600; /* especificacao peso da fonte */
+    border: #22D4FD solid 2px; /* borda do bloco */
 }
