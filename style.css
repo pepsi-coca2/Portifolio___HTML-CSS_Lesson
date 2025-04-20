@@ -56,9 +56,10 @@ h2 {
 }
 
 .redes-sociais .buttom {
-    /* background-color: #22D4FD; /* cor de fundo do botao */
-    width: 278px; /* largura do botao */
-    text-align: center;
+    display: flex;
+    justify-content: center; /* os elementos serão centralizados em seu elemento pai */
+    gap: 16px; /* tamanho do espaco entre o icone e o texto */
+    width: 330px; /* largura do botao */
     border-radius: 8px; /* borda arredondada */
     font-size: 24px;
     padding: 21.5px 0;  /* msm que: 21.5px 0 21.5px 0 */
@@ -67,4 +68,9 @@ h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600; /* especificacao peso da fonte */
     border: #22D4FD solid 2px; /* borda do bloco */
+}
+
+.redes-sociais .buttom:hover { /* quando o mouse estiver em cima do botao */
+    background: #272727; /* cor de fundo do botao */
+    transition: 0.3s; /* tempo de transicao */
 }
