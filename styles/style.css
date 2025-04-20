@@ -6,6 +6,24 @@
     margin: 0;
     padding: 0; /* remove o padding e margin padrão */
 }
+header {
+    padding: 2% 0 0 15%; /* padding superior de 2% e lateral de 15% */
+}
+
+header nav { /* o flexbox sempre é colocado no elemento contaner, o elemento pai */
+    display: flex;
+    gap: 80px;
+
+}
+
+header a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22D4FD;
+    text-decoration: none; /* remove sublinhado padrao*/
+
+}
 
 h1 {
     font-size: 36px;
@@ -18,7 +36,6 @@ p   {
 }
 
 body{
-    height: 100vh; /* totalidade da altura da tela */
     background: #000;
     color: #f6f6f6; /* cor do texto */
 }
@@ -27,15 +44,15 @@ body{
     color: #22D4FD;
 }
 
-#flex-box {
-    margin: 10% 15%; /* margem superior e inferior de 10% e lateral de 15% */
+#apresentacao {
+    padding: 5% 20%; /* padding superior e inferior de 10% e lateral de 15% */
     display: flex; /* ativa flexbox */
     align-items: center;
     justify-content: space-between;
 }
 
 #texto {
-    width: 615px;
+    width: 715px;
     display: flex;
     flex-direction: column; /* muda a direção do flexbox para coluna, pois o padrao do flexbox é em linha*/
     gap: 40px; /* espaço entre os elementos filhos */
@@ -73,4 +90,13 @@ h2 {
 .redes-sociais .buttom:hover { /* quando o mouse estiver em cima do botao */
     background: #272727; /* cor de fundo do botao */
     transition: 0.3s; /* tempo de transicao */
+}
+
+footer {
+    text-align: center; /* centraliza o texto */
+    color: #000;
+    background: #22D4FD; /* cor de fundo do footer */
+    padding: 16px 0; /* padding superior e inferior de 16px */
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
 }
