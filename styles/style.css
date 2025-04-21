@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
+:root { /* Variaveis globais */
+    --cor-primaria: #443627; /* para usar isso use a var(#) */
+    --cor-secundaria: #F2F6D0; 
+    --cor-terciaria: #D98324; 
+    
+    --fonte-titulo: 'Krona One', sans-serif;
+    --fonte-texto: 'montserrat', sans-serif;
+
+    --fonte-tamanho-texto: 24px;
+    --fonte-tamanho-titulo: 36px;
+}
 
 * { /* Seleciona todos os elementos */
     margin: 0;
@@ -17,41 +28,41 @@ header nav { /* o flexbox sempre é colocado no elemento contaner, o elemento pa
 }
 
 header a {
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-family: var(--fonte-texto);
+    font-size: var(--fonte-tamanho-texto);
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     text-decoration: none; /* remove sublinhado padrao*/
 
 }
 
 h1 {
-    font-size: 36px;
+    font-size: var(--fonte-tamanho-titulo);
     font-family: "Krona One", sans-serif; /* o nome pode ser encontrado junto com o @import */
 }
 
 p   {
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-size: var(--fonte-tamanho-texto);
+    font-family: var(--fonte-texto);
 }
 
 body{
-    background: #000;
+    background: var(--cor-primaria);
     color: #f6f6f6; /* cor do texto */
 }
 
 #titulo-em-destaque  {
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
-#apresentacao {
+.apresentacao {
     padding: 5% 20%; /* padding superior e inferior de 10% e lateral de 15% */
     display: flex; /* ativa flexbox */
     align-items: center;
     justify-content: space-between;
 }
 
-#texto {
+.texto {
     width: 715px;
     display: flex;
     flex-direction: column; /* muda a direção do flexbox para coluna, pois o padrao do flexbox é em linha*/
@@ -59,8 +70,8 @@ body{
 }
 
 h2 {
-    font-size: 24px;
-    font-family: "Krona One", sans-serif;
+    font-size: var(--fonte-tamanho-texto);
+    font-family: var(--fonte-titulo);
     font-weight: 400; /* peso da fonte */
 }
 
@@ -78,13 +89,13 @@ h2 {
     gap: 16px; /* tamanho do espaco entre o icone e o texto */
     width: 330px; /* largura do botao */
     border-radius: 8px; /* borda arredondada */
-    font-size: 24px;
+    font-size: var(--fonte-tamanho-texto);
     padding: 21.5px 0;  /* msm que: 21.5px 0 21.5px 0 */
     text-decoration: none; /* remove sublinhado padrao*/
     color: #F6F6F6;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-texto);
     font-weight: 600; /* especificacao peso da fonte */
-    border: #22D4FD solid 2px; /* borda do bloco */
+    border: var(--cor-terciaria) solid 2px; /* borda do bloco */
 }
 
 .redes-sociais .buttom:hover { /* quando o mouse estiver em cima do botao */
@@ -95,8 +106,8 @@ h2 {
 footer {
     text-align: center; /* centraliza o texto */
     color: #000;
-    background: #22D4FD; /* cor de fundo do footer */
-    padding: 16px 0; /* padding superior e inferior de 16px */
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    background: var(--cor-terciaria); /* cor de fundo do footer */
+    padding: 25px 0; /* padding superior e inferior de 16px */
+    font-family: var(--fonte-texto);
+    font-size: var(--fonte-tamanho-texto);
 }
