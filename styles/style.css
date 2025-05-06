@@ -2,63 +2,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
 :root { /* Variaveis globais */
-    --cor-primaria: #443627; /* para usar isso use a var(#) */
-    --cor-secundaria: #F2F6D0; 
-    --cor-terciaria: #D98324; 
+    --cor-pri: #443627; /* para usar isso use a var(#) */
+    --cor-sec: #F2F6D0; 
+    --cor-ter: #D98324; 
     
     --fonte-titulo: 'Krona One', sans-serif;
     --fonte-texto: 'montserrat', sans-serif;
 
-    --fonte-tamanho-texto: 24px;
-    --fonte-tamanho-titulo: 36px;
+    --fonte-tam-texto: 1.3rem; /* 1 rem = 16 px (padrao) */
+    --fonte-tam-titulo: 2.2rem; /* unidade de medida relativa ao tamanho da fonte do elemento raiz (html) */
 }
 
 * { /* Seleciona todos os elementos */
     margin: 0;
     padding: 0; /* remove o padding e margin padrão */
 }
+
 header {
-    padding: 2% 0 0 15%; /* padding superior de 2% e lateral de 15% */
+    margin: 3% 0 0 15%; /* padding superior de 2% e esquerdo de 15% */
 }
 
 header nav { /* o flexbox sempre é colocado no elemento contaner, o elemento pai */
     display: flex;
     gap: 80px;
-
 }
 
 header a {
     font-family: var(--fonte-texto);
-    font-size: var(--fonte-tamanho-texto);
+    font-size: var(--fonte-tam-texto);
     font-weight: 600;
-    color: var(--cor-terciaria);
+    color: var(--cor-ter);
     text-decoration: none; /* remove sublinhado padrao*/
-
 }
 
 h1 {
-    font-size: var(--fonte-tamanho-titulo);
+    font-size: var(--fonte-tam-titulo);
     font-family: "Krona One", sans-serif; /* o nome pode ser encontrado junto com o @import */
 }
 
 p   {
-    font-size: var(--fonte-tamanho-texto);
+    font-size: var(--fonte-tama-texto);
     font-family: var(--fonte-texto);
 }
 
 body{
-    background: var(--cor-primaria);
+    background: var(--cor-pri);
     color: #f6f6f6; /* cor do texto */
 }
 
 #titulo-em-destaque  {
-    color: var(--cor-terciaria);
+    color: var(--cor-ter);
 }
 
 .apresentacao {
     padding: 5% 20%; /* padding superior e inferior de 10% e lateral de 15% */
     display: flex; /* ativa flexbox */
-    align-items: center;
+    gap: 50px;
+    align-items: start;
     justify-content: space-between;
 }
 
@@ -66,11 +66,11 @@ body{
     width: 715px;
     display: flex;
     flex-direction: column; /* muda a direção do flexbox para coluna, pois o padrao do flexbox é em linha*/
-    gap: 40px; /* espaço entre os elementos filhos */
+    gap: 30px; /* espaço entre os elementos filhos */
 }
 
 h2 {
-    font-size: var(--fonte-tamanho-texto);
+    font-size: var(--fonte-tam-texto);
     font-family: var(--fonte-titulo);
     font-weight: 400; /* peso da fonte */
 }
@@ -87,15 +87,15 @@ h2 {
     display: flex;
     justify-content: center; /* os elementos serão centralizados em seu elemento pai */
     gap: 16px; /* tamanho do espaco entre o icone e o texto */
-    width: 330px; /* largura do botao */
+    width: 250px; /* largura do botao */
     border-radius: 8px; /* borda arredondada */
-    font-size: var(--fonte-tamanho-texto);
-    padding: 21.5px 0;  /* msm que: 21.5px 0 21.5px 0 */
+    font-size: var(--fonte-tam-texto);
+    padding: 18px 0;  /* msm que: 20px 0 20px 0 */
     text-decoration: none; /* remove sublinhado padrao*/
     color: #F6F6F6;
     font-family: var(--fonte-texto);
     font-weight: 600; /* especificacao peso da fonte */
-    border: var(--cor-terciaria) solid 2px; /* borda do bloco */
+    border: var(--cor-ter) solid 1px; /* borda do bloco */
 }
 
 .redes-sociais .buttom:hover { /* quando o mouse estiver em cima do botao */
@@ -103,11 +103,35 @@ h2 {
     transition: 0.3s; /* tempo de transicao */
 }
 
+img.foto {
+    margin-top: 10%;
+    width: 40%;
+}
+
+@media (max-width: 1000px) { /* para telas menores que 1000px */
+    .apresentacao {
+        flex-direction: column; /* muda a direção do flexbox para coluna, pois o padrao do flexbox é em linha*/
+        align-items: center; /* centraliza os elementos filhos */
+        gap: 100px; /* espaço entre os elementos filhos */
+        padding: 5% 5%; /* padding superior e inferior de 10% e lateral de 15% */
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    img.foto {
+        order: -1; /* move para o topo do flexbox */
+        width: 60%;
+    }
+    
+}
+
 footer {
     text-align: center; /* centraliza o texto */
     color: #000;
-    background: var(--cor-terciaria); /* cor de fundo do footer */
+    background: var(--cor-ter); /* cor de fundo do footer */
     padding: 25px 0; /* padding superior e inferior de 16px */
     font-family: var(--fonte-texto);
-    font-size: var(--fonte-tamanho-texto);
+    font-size: var(--fonte-tam-texto);
 }
