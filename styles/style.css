@@ -27,6 +27,11 @@ header nav { /* o flexbox sempre é colocado no elemento contaner, o elemento pa
     gap: 80px;
 }
 
+header a:hover {
+    color: #000;
+    transition: 1s;
+}
+
 header a {
     font-family: var(--fonte-texto);
     font-size: var(--fonte-tam-texto);
@@ -106,6 +111,7 @@ h2 {
 img.foto {
     margin-top: 10%;
     width: 40%;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 1000px) { /* para telas menores que 1000px */
@@ -124,6 +130,10 @@ img.foto {
         order: -1; /* move para o topo do flexbox */
         width: 60%;
     }
+
+    nav a {
+        margin-top: 20px;
+    }
     
 }
 
@@ -131,7 +141,8 @@ footer {
     text-align: center; /* centraliza o texto */
     color: #000;
     background: var(--cor-ter); /* cor de fundo do footer */
-    padding: 25px 0; /* padding superior e inferior de 16px */
+    padding: 20px 0; /* padding superior e inferior de 16px */
     font-family: var(--fonte-texto);
-    font-size: var(--fonte-tam-texto);
+    font-size: 1rem;
+    margin-top: 10%;
 }
